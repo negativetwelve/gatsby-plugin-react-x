@@ -13,5 +13,5 @@ node_modules/*
 # Mac files
 *.DS_Store
 
-/gatsby-browser.js
+/gatsby-node.js
 /gatsby-ssr.js

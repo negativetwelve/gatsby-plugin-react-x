@@ -1,6 +1,6 @@
 {
-  "name": "gatsby-plugin-drift",
-  "description": "Gatsby plugin for drift.com.",
+  "name": "gatsby-plugin-react-x",
+  "description": "Gatsby plugin for react-x components.",
   "version": "1.0.0",
   "author": "Mark Miyashita <negativetwelve@gmail.com>",
   "devDependencies": {
@@ -10,9 +10,9 @@
     "cross-env": "^5.0.5"
   },
   "keywords": [
-    "drift",
     "gatsby",
-    "gatsby-plugin"
+    "gatsby-plugin",
+    "react-x"
   ],
   "license": "MIT",
   "main": "index.js",
@@ -26,6 +26,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/negativetwelve/gatsby-plugin-drift.git"
+    "url": "https://github.com/negativetwelve/gatsby-plugin-react-x.git"
   }
 }
