@@ -1,21 +1,16 @@
-# gatsby-plugin-drift
+# gatsby-plugin-react-x
 
-Easily add Drift (drift.com) to your Gatsby site.
+Gatsby plugin for react-x components.
 
 ## Install
 
-`yarn add gatsby-plugin-drift`
+`yarn add gatsby-plugin-react-x`
 
 ## Usage
 
 ```javascript
 // In your gatsby-config.js
 plugins: [
-  {
-    resolve: 'gatsby-plugin-drift',
-    options: {
-      appId: 'YOUR-APP-ID',
-    },
-  },
+  'gatsby-plugin-react-x',
 ],
 ```
