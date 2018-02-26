@@ -14,4 +14,4 @@ node_modules/*
 *.DS_Store
 
 /gatsby-node.js
-/gatsby-ssr.js
+/react-art.js

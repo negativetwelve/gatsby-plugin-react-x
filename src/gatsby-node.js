@@ -2,7 +2,7 @@ exports.modifyWebpackConfig = ({config, env}) => {
   config.merge({
     resolve: {
       alias: {
-        'react-art': 'empty-module',
+        'react-art': './react-art.js',
       },
       extensions: ['.dom.js', '.js', '.json'],
     },
