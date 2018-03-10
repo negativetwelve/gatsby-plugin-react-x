@@ -2,13 +2,15 @@
 import React from 'react';
 import ReactDOMServer from 'react-dom/server';
 import {AppRegistry} from 'react-native-web';
+import {ServerStyleSheet, StyleSheetManager} from "styled-components"
 
 exports.replaceRenderer = ({bodyComponent, replaceBodyHTMLString, setHeadComponents}) => {
-  class App extends React.Component {
-    render() {
-      return bodyComponent;
-    }
-  }
+  const sheet = new ServerStyleSheet();
+  const App = (
+    <StyleSheetManager sheet={sheet.instance}>
+      {bodyComponent}
+    </StyleSheetManager>
+  );
 
   AppRegistry.registerComponent('App', () => App)
   const {element, stylesheets} = AppRegistry.getApplication('App');
@@ -21,5 +23,6 @@ exports.replaceRenderer = ({bodyComponent, replaceBodyHTMLString, setHeadCompone
   replaceBodyHTMLString(html);
   setHeadComponents([
     stylesheets,
+    sheet.getStyleElement(),
   ]);
 };
