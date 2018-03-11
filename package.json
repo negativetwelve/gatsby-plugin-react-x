@@ -5,6 +5,7 @@
   "author": "Mark Miyashita <negativetwelve@gmail.com>",
   "devDependencies": {
     "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "cross-env": "^5.0.5"
@@ -22,6 +23,7 @@
     "prepublish": "cross-env NODE_ENV=production npm run build"
   },
   "dependencies": {
+    "babel-plugin-styled-components": "1.5.1",
     "babel-runtime": "^6.26.0"
   },
   "repository": {

@@ -13,3 +13,14 @@ exports.modifyWebpackConfig = ({config, env}) => {
 
   return config;
 };
+
+exports.modifyBabelrc = ({babelrc}) => ({
+  ...babelrc,
+  plugins: [
+    ...babelrc.plugins,
+    ['babel-plugin-styled-components', {
+      displayName: true,
+      ssr: true,
+    }],
+  ],
+});
