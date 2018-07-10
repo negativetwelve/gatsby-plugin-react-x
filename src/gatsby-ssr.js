@@ -19,7 +19,7 @@ exports.replaceRenderer = ({bodyComponent, replaceBodyHTMLString, setHeadCompone
 
   replaceBodyHTMLString(html);
   setHeadComponents([
-    stylesheets,
+    styleElement,
     sheet.getStyleElement(),
   ]);
 };
