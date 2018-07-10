@@ -13,12 +13,9 @@ exports.replaceRenderer = ({bodyComponent, replaceBodyHTMLString, setHeadCompone
   );
 
   AppRegistry.registerComponent('App', () => App)
-  const {element, stylesheets} = AppRegistry.getApplication('App');
+  const {element, getStyleElement} = AppRegistry.getApplication('App');
   const html = ReactDOMServer.renderToString(element);
-
-  // TODO(mark): Switch to getStyleElement when react-primitives updates to
-  // 0.5.2 of react-native-web.
-  // const styleElement = getStyleElement();
+  const styleElement = getStyleElement();
 
   replaceBodyHTMLString(html);
   setHeadComponents([
