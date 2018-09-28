@@ -2,7 +2,9 @@
 import React from 'react';
 import {AppRegistry} from 'react-native-web';
 
-exports.wrapRootComponent = ({Root}) => {
+exports.wrapRootElement = ({element}) => {
+  const Root = () => element;
+
   AppRegistry.registerComponent('Root', () => Root);
 
   class WrappedRootComponent extends React.PureComponent {
