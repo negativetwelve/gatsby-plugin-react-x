@@ -6,12 +6,8 @@ exports.wrapRootElement = ({element}) => {
   const Root = () => element;
 
   AppRegistry.registerComponent('Root', () => Root);
+  const application = AppRegistry.getApplication('Root', {initialProps: this.props});
 
-  class WrappedRootComponent extends React.PureComponent {
-    render() {
-      return AppRegistry.getApplication('Root', {initialProps: this.props}).element;
-    }
-  }
-
-  return WrappedRootComponent;
+  // Returns the wrapped element for the entire application.
+  return application.element;
 };
