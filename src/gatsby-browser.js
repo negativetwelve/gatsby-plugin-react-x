@@ -1,4 +1,5 @@
 // Libraries
+import './browser-polyfills';
 import React from 'react';
 import {AppRegistry} from 'react-native-web';
 
