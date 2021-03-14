@@ -9,7 +9,7 @@ exports.onCreateWebpackConfig = ({actions, getConfig}) => {
       alias: {
         'react-art': path.join(__dirname, 'react-art.js'),
       },
-      extensions: ['.dom.js', '.js', '.json'],
+      extensions: ['.dom.tsx', '.dom.ts', '.dom.js', '.tsx', '.ts', '.js', '.json'],
       modules: [
         path.resolve(config.context, 'src'),
         'node_modules',
